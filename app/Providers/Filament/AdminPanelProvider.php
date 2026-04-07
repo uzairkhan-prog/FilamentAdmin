@@ -31,7 +31,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
-            ->brandName('Laracon Admin')
+            ->brandName('Filament Admin')
             ->colors([
                 'primary' => Color::Blue,
             ])

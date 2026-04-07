@@ -91,7 +91,7 @@ Perfect for enterprise applications, SaaS platforms, and any Laravel-based proje
 ### 1. Clone the Repository
 ```bash
 git clone <repository-url>
-cd laracon-admin
+cd Filament-admin
 ```
 
 ### 2. Install Dependencies
@@ -221,7 +221,7 @@ Update `.env` with your database credentials:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=laracon_admin
+DB_DATABASE=filament_admin
 DB_USERNAME=root
 DB_PASSWORD=
 ```

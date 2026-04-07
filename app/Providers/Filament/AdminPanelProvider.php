@@ -33,8 +33,10 @@ class AdminPanelProvider extends PanelProvider
             ->login()
             ->brandName('Filament Admin')
             ->colors([
-                'primary' => Color::Blue,
+                'primary' => Color::Indigo,
+                'secondary' => Color::Gray,
             ])
+            ->userMenuItems([])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->pages([
@@ -42,11 +44,6 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
-                DashboardStats::class,
-                UsersChart::class,
-                PermissionsChart::class,
-                AccountWidget::class,
-                FilamentInfoWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
